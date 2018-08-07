@@ -26,7 +26,8 @@
   <!--This sets the size of the map-->
   <div id="mapid" style="width: 1800px; height: 800px;"></div>
   
-<script> 
+<script src="loc_infra.js"></script> <!-- define and assign first -->
+<script src="index.js"></script> <!-- now you can use it --> 
   <!--Sets the initial location and zoom level of the map-->
     var mymap = L.map('mapid').setView([36.0000, 260.5000], 5);
 
