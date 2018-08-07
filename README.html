@@ -19,6 +19,7 @@
    crossorigin=""></script>
 
 </head>
+	
 <style>
 </style>
 
@@ -27,6 +28,7 @@
   
 <script>
 
+    
     var mymap = L.map('mapid').setView([39.0000, 260.5000], 5);
 
 	//This section adds the OpenStreetMaps tile layer and attribution credit
@@ -36,6 +38,13 @@
     id: 'mapbox.satellite',
     accessToken: 'pk.eyJ1IjoiY2JlcnRyYW4iLCJhIjoiY2praXlvNTExMWFoNDN3a3h4a2Zibnp6diJ9.199swM9Sv6jB2YB9wtvZWg'
 }).addTo(mymap);
+	
+	var us_states;
+	
+	var selection;
+	var selectedLayer;
+	
+	
 
 </script>
 
