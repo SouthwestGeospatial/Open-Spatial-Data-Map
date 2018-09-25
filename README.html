@@ -28,14 +28,14 @@
   
 <script>
     
-    var mymap = L.map('mapid').setView([39.0000, 260.5000], 5);
+    var map = L.map('mapid').setView([39.0000, 260.5000], 5);
 	//This section adds the OpenStreetMaps tile layer and attribution credit
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
     id: 'mapbox.satellite',
     accessToken: 'pk.eyJ1IjoiY2JlcnRyYW4iLCJhIjoiY2praXlvNTExMWFoNDN3a3h4a2Zibnp6diJ9.199swM9Sv6jB2YB9wtvZWg'
-}).addTo(mymap);
+}).addTo(map);
 	
 
 	
