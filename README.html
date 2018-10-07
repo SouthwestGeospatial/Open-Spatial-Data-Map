@@ -31,12 +31,12 @@
 </style>
 
 <body>
-  <div id="mapid" style="width: 100%; height: 875px;"></div>
+  <div id="map" style="width: 100%; height: 875px;"></div>
   
 <script>
 
     
-    var mymap = L.map('mapid').setView([39.0000, 260.5000], 5);
+    var map = L.map('map').setView([39.0000, 260.5000], 5);
 
 	//This section adds the OpenStreetMaps tile layer and attribution credit
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -44,11 +44,11 @@
     maxZoom: 18,
     id: 'mapbox.satellite',
     accessToken: 'pk.eyJ1IjoiY2JlcnRyYW4iLCJhIjoiY2praXlvNTExMWFoNDN3a3h4a2Zibnp6diJ9.199swM9Sv6jB2YB9wtvZWg'
-}).addTo(mymap);
+}).addTo(map);
 	
 var url="https://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/example/colleges.geojson";
 	var geojsonLayer = new L.GeoJSON.AJAX(url);
-	geojsonLayer.addTo(mymap);
+	geojsonLayer.addTo(map);
 
 </script>
 
