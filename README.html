@@ -47,7 +47,8 @@
 }).addTo(mymap);
 	
 var url="https://cdn.rawgit.com/calvinmetcalf/leaflet-ajax/gh-pages/example/colleges.geojson";
-	var geojsonLayer = new L.GeoJSON.AJAX(url).addTo(map);
+	var geojsonLayer = new L.GeoJSON.AJAX(url);
+	geojsonLayer.addTo(mymap);
 
 </script>
 
